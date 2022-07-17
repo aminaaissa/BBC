@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\web;
+namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Support\Facades\Redirect;
@@ -177,11 +177,15 @@ return view('front.compte.showlistBureauEtude' ,['BureauEtude'=>$BureauEtude]);
                    $use->docSig=$fileName;
                   
               }
-              $use->docSig='1';
+              $use->docSig=$fileName;
           $use->save();
         
           return Redirect::to('/list_bbcommandeClient');
         
             }
-                                                              
+
+            //*************************documentsigneEnvoyer******************************* ***/
+            public function documentsigneEnvoyer(Request $request,$code){
+                         return  $use=B_bcommande::find($code);      
+                          }                              
 }

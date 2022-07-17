@@ -569,38 +569,29 @@ transform: rotate(180deg);
                     <center>Nombre de <br>Bâtiments <br>et/ou Ouvrages</center>
                     </td>
             </tr>@foreach($bbloc as $blo) <tr style="outline: thin solid">
-                <td style="outline: thin solid ;padding: 0 10px;font-size: 17px;"> {
-                    {
-                    $blo->Désignation
-                    }
-                    }
+                <td style="outline: thin solid ;padding: 0 10px;font-size: 17px;"> 
+                    {{ $blo->Désignation }}
+                   
+                   
 
                     </center>
                 </td>
                 <td style="outline: thin solid ;padding: 0 10px;font-size: 17px;">
-                    <center> {
-                        {
-                        $blo->EmpriseduBatiment
-                        }
-                        }
+                    <center>  {{$blo->EmpriseduBatiment}}
 
                     </center>
                 </td>
                 <td style="outline: thin solid ;padding: 0 10px;font-size: 17px;">
-                    <center> {
-                        {
-                        $blo->NombredEtages
-                        }
-                        }
+                    <center> 
+                            {{ $blo->NombredEtages}}
+                        
 
                     </center>
                 </td>
                 <td style="outline: thin solid ;padding: 0 10px;font-size: 17px;">
-                    <center> {
-                        {
-                        $blo->NombredeBatiment
-                        }
-                        }
+                    <center>
+                    {{$blo->NombredeBatiment}}
+                        
 
                     </center>
                 </td>

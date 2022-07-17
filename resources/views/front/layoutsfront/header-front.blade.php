@@ -134,6 +134,57 @@
                             <span> Suivi Situation des projets </span>
                         </a>
                     </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block">
+                            <i class="material-icons">assignment</i>
+                            <span>RECEVABILITE DU DOSSIER</span>
+                        </a>
+                        <ul class="ml-menu" style="display: none;">
+                            <li>
+                                <a href="pages/forms/basic-form-elements.html" class=" waves-effect waves-block"> DOSSIER EN COURS </a>
+                            </li>
+                            <li>
+                                <a href="pages/forms/advanced-form-elements.html" class=" waves-effect waves-block"> DOSSIER NON RECEVABLE </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block">
+                            <i class="material-icons">assignment</i>
+                            <span>TRAITEMENT DES DOSSIERS RECEVABLES</span>
+                        </a>
+                        <ul class="ml-menu" style="display: none;">
+                            <li>
+                                <a href="pages/forms/basic-form-elements.html" class=" waves-effect waves-block"> EN COURS DE TRAITEMENT</a>
+                            </li>
+                            <li>
+                                <a href="pages/forms/advanced-form-elements.html" class=" waves-effect waves-block"> EXAMINES</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block">
+                            <i class="material-icons">assignment</i>
+                            <span>CONTRÔLE CHANTIER</span>
+                        </a>
+                        <ul class="ml-menu" style="display: none;">
+                            <li>
+                                <a href="pages/forms/basic-form-elements.html" class=" waves-effect waves-block"> NON DEMARRES</a>
+                            </li>
+                            <li>
+                                <a href="pages/forms/advanced-form-elements.html" class=" waves-effect waves-block"> EN COURS
+</a>
+                            </li>
+                            <li>
+                                <a href="pages/forms/advanced-form-elements.html" class=" waves-effect waves-block">A L'ARRÊT
+</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
                     <li class="active">
                         <a href="#">
                             <i class="material-icons">person</i>

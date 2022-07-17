@@ -25,7 +25,7 @@ public function login(Request $request){
                                       if($request->isMethod('post')){
                                                                       $data=$request->input(); 
 
-                                                                     if(Auth::guard('web')->attempt(['email'=>$data['email'],'password'=>$data['password'],'is_activated'=> 0])){
+                                                                     if(Auth::guard('web')->attempt(['email'=>$data['email'],'password'=>$data['password'],'is_activated'=> 1])){
 
                                                                                                                                                                                  return redirect('/Compte');
                                                                                                                                                                                 }

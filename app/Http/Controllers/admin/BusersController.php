@@ -46,7 +46,7 @@ class BusersController extends Controller
        // return   $user->Nom_DR;
        // return 'locale agence';
        
-        $users=User::where('users.wilaya',"=", $str) ->orderBy('created_at','desc') 
+        $users=User::where('users.wilaya',"=", $str)->orderBy('created_at','desc') 
         ->get();
         return view('admin.List-client' ,['users'=>$users]);
     }

@@ -101,6 +101,14 @@
                                         <a href="{{ url('chargerdocument',$use->code)}}" onclick="myFunction()"
                                             class="btn btn-success">charger pour envoyer </a>
                                     </td>
+                                    <td>
+                                        <a href=" {{asset('documentsigne/'.$use->docSig)}}.pdf"target="_blank"
+                                            class="btn btn-success">Document finale </a>
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('documentsigneEnvoyer', $use->code) }}" class="btn btn-warning"
+                                            target="_blank">Envoyer  </a>
+                                    </td>
                                 </tr>
                                 @endforeach
 

@@ -61,6 +61,7 @@ Route::get('/logout-compte','UsersController@logout');
 
 Route::post('/saveBon','BBClientController@store');
 Route::get('/showPDF/{id}','BBClientController@showPDF')->name('boncom.showPDF');
+Route::get('/documentsigneEnvoyer/{id}','BBClientController@documentsigneEnvoyer')->name('documentsigneEnvoyer');
 
 //Route::get('/chargerdocument','BBClientController@chargerdocument')->name('boncom.chargerdocument');
 
@@ -151,6 +152,12 @@ Route::match(['get','post'],'/admin','admin\AdminController@login')->name('admin
                                                                                                                   Route::get('/33', 'UsersController@index');
    
 });});
+
+/************RECEVABILITE DU DOSSIER************* */
+
+
+
+/************ Fin RECEVABILITE DU DOSSIER************* */
 
 
 /**************Partie test aléatoire ********************************************/
